@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Verbo Lanches</title>
+</head>
+<body>
+    <header id="cabecalho" class="sticky-top">
+        <div class="navbar navbar-expand-lg p-4">
+            <div class="container">
+                <img src="images/logo/logo-yumi.png" alt="" class="logo-menor">
+                <h3>Yuumi Food</h3>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item">
+                            <a href="#sobre-o-restaurante" class="nav-link">
+                                <i class="bi bi-house-door me-1"></i>
+                                Sobre o restaurante
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#cardapio" class="nav-link">
+                                <i class="bi bi-card-text me-1"></i>
+                                Cardápio semanal
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#informacoes" class="nav-link">
+                                <i class="bi bi-calendar-check me-1"></i>
+                                Informações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#fale-conosco" class="nav-link">
+                                <i class="bi bi-chat-left-text me-1"></i>
+                                Fale conosco
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">   
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="images/slides/1.png"  alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/slides/2.png" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000"> 
+                        <img src="images/slides/3.png" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+    
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="foto do restaurante">
+                        </div>
+                        <div class="col-md-7 mt-4 mt-md-0">
+                            <h2>Sobre o restaurante</h2>
+                            <p>Destinado a trabalhadores locais e famílias, a Yuumi Food tem um cardápio único, com pratos que mudam a cada dia da semana. Refeições preparadas com ingredientes frescos e de alta qualidade, garantindo sabor e frescor. Ambiente acolhedor e dedicação de uma equipe que trata cada cliente como parte da família. Se você busca uma experiência que combina tradição, qualidade e toque pessoal, a Yuumi Food é o lugar perfeito para você!</p>
+                            <h2>Onde fica?</h2>
+                            <p>104 Sul Quadra ACSE 1 Avenida Juscelino Kubitschek</p>
+                            <ul>
+                                <li><a href="#" target="_blank">Localização</a></li>
+                                <li><a href="#" target="_blank">Proprietário</a></li>
+                                <li><a href="#" target="_blank">O que estão falando?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center mb-5">Cardápio semanal</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#segunda" class="fw-bold text-start nav-link text-colored active">Segunda-feira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#terca" class="fw-bold text-start nav-link text-colored">Terça-feira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#quarta" class="fw-bold text-start nav-link text-colored">Quarta-feira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#quinta" class="fw-bold text-start nav-link text-colored">Quinta-feira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sexta" class="fw-bold text-start nav-link text-colored">Sexta-feira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sabado" class="fw-bold text-start nav-link text-colored">Sábado</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="segunda">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/segunda/Filé-de-Frango-Post.png" alt="prato file de frango">
+                                        <h5 class="text-colored fw-bold mt-2">File de Frango</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/segunda/panqueca.jpg" alt="prato panqueca">
+                                        <h5 class="text-colored fw-bold mt-2">Panqueca</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/segunda/chambari.jpg" alt="prato chambari">
+                                        <h5 class="text-colored fw-bold mt-2">Chambari</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="terca">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/terca/brasileirinho-frango.jpg" alt="prato frango frito">
+                                        <h5 class="text-colored fw-bold mt-2">Frango Frito</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/terca/depositphotos_69724631-stock-photo-dish-with-meat-rice-and.jpg" alt="prato lasanha">
+                                        <h5 class="text-colored fw-bold mt-2">Bife Acebolado</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="quarta">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/quarta/202306042043_1TH6_i.avif" alt="prato isca de frango">
+                                        <h5 class="text-colored fw-bold mt-2">PIsca de Frango</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/quarta/be299d49-860f-427b-a7a6-9804d2c36f56-Lasanha-de-queijo-com-arroz-e-salada-refrescante.-0" alt="prato lasanha">
+                                        <h5 class="text-colored fw-bold mt-2">Lasanha</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="quinta">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/quinta/depositphotos_69724631-stock-photo-dish-with-meat-rice-and.jpg" alt="prato strogonoff">
+                                        <h5 class="text-colored fw-bold mt-2">Strogonoff de Frango</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/quinta/_PNK6253-bisteca-ao-limao.jpg" alt="prato bisteca">
+                                        <h5 class="text-colored fw-bold mt-2">Bisteca de porco</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/quinta/chambari.jpg" alt="prato chambari">
+                                        <h5 class="text-colored fw-bold mt-2">Chambari</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sexta">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/sexta/receita-de-feijoada-do-mar-1267121_widexl.jpg" alt="prato feijoada">
+                                        <h5 class="text-colored fw-bold mt-2">Feijoada</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/sexta/brasileirinho-frango.jpg" alt="prato frango frito">
+                                        <h5 class="text-colored fw-bold mt-2">Frango Frito</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sabado">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/sabado/depositphotos_69724631-stock-photo-dish-with-meat-rice-and.jpg" alt="prato bife acebolado">
+                                        <h5 class="text-colored fw-bold mt-2">Bife Acebolado</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/sabado/9625bfdc-parmegiana-em-goiania-1.jpg" alt="prato parmegiana">
+                                        <h5 class="text-colored fw-bold mt-2">Frango a Parmegiana</h5>
+                                        <p> Omnis enim quisquam cumque, harum, voluptatibus illo perspiciatis? Veniam, vitae.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="informacoes" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Para todas as ocasiões</h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/informacoes/Design sem nome.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="text-colored fs-4">
+                            <i class="bi bi-clock"></i>
+                            Horário de funcionamento</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi porro non atque provident, dolorem laboriosam aliquam nisi, eius obcaecati a ipsam unde, blanditiis in rerum odit delectus alias nam accusantium!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/informacoes/almoco-de-pascoa-interna.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="text-colored fs-4">
+                            <i class="bi bi-coin"></i>
+                            O que vendemos?</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi porro non atque provident, dolorem laboriosam aliquam nisi, eius obcaecati a ipsam unde, blanditiis in rerum odit delectus alias nam accusantium!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/informacoes/1-14.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="text-colored fs-4">
+                            <i class="bi bi-geo-alt"></i>
+                            Ponto de referência</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi porro non atque provident, dolorem laboriosam aliquam nisi, eius obcaecati a ipsam unde, blanditiis in rerum odit delectus alias nam accusantium!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">
+                        Fale conosco
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 mt-2">
+                        <div class="row">
+                            <h3 class="fs-4 text-colored-black">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5"><a href="#"><i class="bi bi-facebook text-colored-black"></i></a></li>
+                                <li class="fs-5 ms-1 me-1"><a href="#"><i class="bi bi-instagram text-colored-black"></i></a></li>
+                                <li class="fs-5"><a href="#"><i class="bi bi-whatsapp text-colored-black"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="fs-4 text-colored-black">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço</h3>
+                            <p class="text-colored-black">Rua teste exemplo, numero 145, no bairro bootstrap, São Paulo-SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h2 class="fs-6">&copy; Pedro Silva - Todos os Direitos Reservados</h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
